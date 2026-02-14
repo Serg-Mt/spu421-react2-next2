@@ -7,6 +7,7 @@ export default function Page() {
     send1 = p => setState(prev => p + prev),
     send2 = p => setState(prev => prev + p);
   return <>
+    <h1>Home</h1>
     <Converter />
     {state} <br />
     <SmartInput send={send1} />
@@ -31,7 +32,7 @@ function LikeButton({ color, size, start = 0, step = 1, border }) {
       .join(' '),
     style = { color }
   return <button className={className}
-    style={{color}}
+    style={{ color }}
     onClick={() => setLikes(prev => +step + prev)}
     onContextMenu={() => setBordered(prev => !prev)}
   >
