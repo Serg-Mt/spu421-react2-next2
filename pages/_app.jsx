@@ -7,7 +7,8 @@ const
     // { href: '/info', title: 'Info' },
     { href: 'click-fetch', title: 'get Users by click' },
     { href: 'mount-fetch', title: 'get Isers on mount' },
-    { href: 'todo', title: 'ToDo' }
+    { href: 'todo', title: 'ToDo' },
+    { href: 'calendar', title: 'Calendar' }
     // { href: 'like-button', title: 'Lesson 5' },
     // { href: 'click-fetch', title: 'Users by click' },
     // { href: 'mount-fetch', title: 'Users on mount' },
@@ -18,7 +19,7 @@ export function Nav() {
     <ul>
       {pages.map(({ href, title }) =>
         <li key={href}>
-          <Link  href={href}>{title}</Link>
+          <Link href={href}>{title}</Link>
         </li>)}
     </ul>
   </nav>

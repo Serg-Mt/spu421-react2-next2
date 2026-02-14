@@ -63,10 +63,6 @@ function Form2({ addItem }) { // form
 const Form = [memo(Form0), memo(Form1), memo(Form2)][0];
 
 
-
-
-
-
 /**
  * 
  * @param {object} props

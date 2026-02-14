@@ -1,0 +1,45 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.default, .custom {
+  font-family: sans-serif;
+}
+.default td, .custom td {
+  text-align: center;
+}
+.default [data-selected]::before, .custom [data-selected]::before {
+  content: "[";
+}
+.default [data-selected]::after, .custom [data-selected]::after {
+  content: "]";
+}
+.default [data-selected], .custom [data-selected] {
+  background-color: aqua;
+  border-radius: 50%;
+}
+
+.custom {
+  font-style: italic;
+}
+.custom [data-selected] {
+  background-color: transparent;
+}
+.custom caption {
+  text-decoration: underline;
+}
+
+.popup {
+  position: absolute;
+  box-shadow: 0 0 20px 3px gray;
+  background-color: white;
+}
+
+.dateselector {
+  border: 1px solid gray;
+  text-align: right;
+}
+.dateselector::after {
+  content: "📆";
+}
