@@ -2,6 +2,12 @@ body {
   margin: 0;
 }
 
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Или 100% при условии CSS выше */
+}
+
 header,
 footer {
   background-color: indigo;
@@ -11,6 +17,7 @@ footer {
 
 main {
   padding: .5em;
+  flex-grow: 1;
 }
 
 nav ul {
