@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+
+header,
+footer {
+  background-color: indigo;
+  color: white;
+  padding: .5em;
+}
+
+main {
+  padding: .5em;
+}
+
+nav ul {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+  gap: .5em;
+
+  a {
+    color: white;
+  }
+}
+.error {
+  color: yellow;
+  background-color: red;
+}

@@ -1,0 +1,56 @@
+fieldset.userCard {
+  --shift: 5px;
+  width: fit-content;
+  font-family: cursive;
+  background: linear-gradient(135deg, Gainsboro, WhiteSmoke, Gainsboro);
+  border-radius: 0.5em;
+
+  transition: 200ms transform, 200ms box-shadow;
+
+  &:hover {
+    transform: translate(calc(-.5 * var(--shift)), calc(-.5 * var(--shift)));
+    box-shadow: var(--shift) var(--shift) gray;
+  }
+
+  legend,
+  dt,
+  dd {
+    background-color: white;
+    border: 1px inset white;
+    border-radius: 1em;
+    padding: 0 0.5em;
+  }
+
+  dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* justify-content: start; */
+    justify-content: center;
+    justify-items: start;
+    gap: 1px 0;
+    /* border: 1px gray inset; */
+  }
+
+  dl dt {
+    white-space: nowrap;
+    justify-self: end;
+    border-right-style: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  dl dt::after {
+    content: ":";
+  }
+
+  dl dd {
+    padding-left: 0;
+    /* display: inline; */
+    text-wrap: balance;
+    margin: 0;
+    border-left-style: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
